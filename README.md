@@ -5,10 +5,6 @@
 [Gitee源码](https://gitee.com/ALI1416/parent)
 [![Build Status](https://travis-ci.com/ALI1416/parent.svg?branch=master)](https://travis-ci.com/ALI1416/parent)
 
-[Github测试](https://github.com/ALI1416/parent-test)
-[Gitee测试](https://gitee.com/ALI1416/parent-test)
-[![Build Status](https://travis-ci.com/ALI1416/parent-test.svg?branch=master)](https://travis-ci.com/ALI1416/parent-test)
-
 ## 简介
 打包发布模板  
 

@@ -3,14 +3,14 @@
 ## 项目地址
 [Github源码](https://github.com/ALI1416/parent)
 [Gitee源码](https://gitee.com/ALI1416/parent)
-[![Build Status](https://travis-ci.com/ALI1416/parent.svg?branch=master)](https://travis-ci.com/ALI1416/parent)
+[![Build Status](https://travis-ci.com/ALI1416/parent.svg?branch=master)](https://app.travis-ci.com/ALI1416/parent)
 
 ## 简介
-打包发布模板  
+打包发布模板
 
 ## 引用模板
 最新版本
-[![Maven central](https://maven-badges.herokuapp.com/maven-central/cn.404z/parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/cn.404z/parent)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/cn.404z/parent/badge.svg)](https://app.maven-badges.herokuapp.com/maven-central/cn.404z/parent)
 
 maven
 ```xml

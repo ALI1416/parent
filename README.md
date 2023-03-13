@@ -1,4 +1,4 @@
-# Parent 打包发布模板
+# Parent 打包、发布父模板
 
 ## 项目地址
 [Github源码](https://github.com/ALI1416/parent)
@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.com/ALI1416/parent.svg?branch=master)](https://app.travis-ci.com/ALI1416/parent)
 
 ## 简介
-打包发布模板
+打包、发布父模板
 
 ## 引用模板
 最新版本
@@ -17,7 +17,7 @@ maven
 <parent>
   <groupId>cn.404z</groupId>
   <artifactId>parent</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1</version>
 </parent>
 ```
 

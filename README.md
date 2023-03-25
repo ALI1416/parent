@@ -4,7 +4,7 @@
 [![Java Support](https://img.shields.io/badge/Java-8+-green)](https://openjdk.org/)
 [![Maven Central](https://img.shields.io/maven-central/v/cn.404z/parent?label=Maven%20Central)](https://mvnrepository.com/artifact/cn.404z/parent)
 [![Tag](https://img.shields.io/github/v/tag/ali1416/parent?label=Tag)](https://github.com/ALI1416/parent/tags)
-[![Repo Size](https://img.shields.io/github/repo-size/ali1416/parent?label=Repo%20Size&color=success)](https://github.com/ALI1416/parent)
+[![Repo Size](https://img.shields.io/github/repo-size/ali1416/parent?label=Repo%20Size&color=success)](https://github.com/ALI1416/parent/archive/refs/heads/master.zip)
 
 [![Java CI](https://github.com/ALI1416/parent/actions/workflows/ci.yml/badge.svg)](https://github.com/ALI1416/parent/actions/workflows/ci.yml)
 

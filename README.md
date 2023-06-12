@@ -1,16 +1,16 @@
-# Parent 项目父模板
+# Maven Project Parent Pattern Maven项目父模板
 
-[![License](https://img.shields.io/github/license/ali1416/parent?label=License)](https://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/github/license/ALI1416/parent?label=License)](https://www.apache.org/licenses/LICENSE-2.0.txt)
 [![Java Support](https://img.shields.io/badge/Java-8+-green)](https://openjdk.org/)
 [![Maven Central](https://img.shields.io/maven-central/v/cn.404z/parent?label=Maven%20Central)](https://mvnrepository.com/artifact/cn.404z/parent)
-[![Tag](https://img.shields.io/github/v/tag/ali1416/parent?label=Tag)](https://github.com/ALI1416/parent/tags)
-[![Repo Size](https://img.shields.io/github/repo-size/ali1416/parent?label=Repo%20Size&color=success)](https://github.com/ALI1416/parent/archive/refs/heads/master.zip)
+[![Tag](https://img.shields.io/github/v/tag/ALI1416/parent?label=Tag)](https://github.com/ALI1416/parent/tags)
+[![Repo Size](https://img.shields.io/github/repo-size/ALI1416/parent?label=Repo%20Size&color=success)](https://github.com/ALI1416/parent/archive/refs/heads/master.zip)
 
 [![Java CI](https://github.com/ALI1416/parent/actions/workflows/ci.yml/badge.svg)](https://github.com/ALI1416/parent/actions/workflows/ci.yml)
 
 ## 简介
 
-项目父模板
+Maven项目父模板
 
 ## 依赖导入
 
@@ -18,18 +18,19 @@
 <parent>
   <groupId>cn.404z</groupId>
   <artifactId>parent</artifactId>
-  <version>1.2.0</version>
+  <version>1.3.0</version>
 </parent>
 ```
 
-## 交流
+## 更新日志
 
-- [x] QQ：`1416978277`
-- [x] 微信：`1416978277`
-- [x] 支付宝：`1416978277@qq.com`
+[点击查看](./CHANGELOG.md)
 
-![交流](https://cdn.jsdelivr.net/gh/ALI1416/ALI1416/image/contact.png)
+## 关于
 
-## 赞助
-
-![赞助](https://cdn.jsdelivr.net/gh/ALI1416/ALI1416/image/donate.png)
+<object data="https://404z.cn/images/about.svg" style="max-width:100%;">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://404z.cn/images/about.dark.svg">
+    <img alt="About" src="https://404z.cn/images/about.light.svg">
+  </picture>
+</object>

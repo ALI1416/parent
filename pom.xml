@@ -6,10 +6,10 @@
   <groupId>cn.404z</groupId>
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
-  <version>1.2.0</version>
+  <version>1.3.0</version>
 
   <name>parent</name>
-  <description>Parent 项目父模板</description>
+  <description>Maven Project Parent Pattern Maven项目父模板</description>
   <url>https://github.com/ALI1416/parent</url>
 
   <scm>
@@ -28,33 +28,33 @@
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-clean-plugin -->
     <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
-    <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
+    <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
     <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-    <maven-surefire-plugin.version>3.0.0</maven-surefire-plugin.version>
+    <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
-    <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
+    <jacoco-maven-plugin.version>0.8.10</jacoco-maven-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
     <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-install-plugin -->
-    <maven-install-plugin.version>3.1.0</maven-install-plugin.version>
+    <maven-install-plugin.version>3.1.1</maven-install-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
-    <maven-deploy-plugin.version>3.1.0</maven-deploy-plugin.version>
+    <maven-deploy-plugin.version>3.1.1</maven-deploy-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
-    <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+    <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
     <maven-javadoc-plugin.version>3.5.0</maven-javadoc-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
-    <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
+    <maven-gpg-plugin.version>3.1.0</maven-gpg-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin -->
     <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
   </properties>
 
   <licenses>
     <license>
-      <name>BSD License</name>
-      <url>https://opensource.org/licenses/BSD-3-Clause</url>
+      <name>Apache-2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
     </license>
   </licenses>
 
@@ -65,9 +65,9 @@
 
   <developers>
     <developer>
-      <id>ali</id>
-      <name>ali</name>
-      <email>ali-k(at)foxmail.com</email>
+      <id>ALI</id>
+      <name>ALI</name>
+      <email>ali-k@foxmail.com</email>
       <roles>
         <role>Developer</role>
       </roles>

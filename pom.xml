@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -26,15 +27,15 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-clean-plugin -->
-    <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
+    <maven-clean-plugin.version>3.3.2</maven-clean-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
     <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
     <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-    <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
+    <maven-surefire-plugin.version>3.2.2</maven-surefire-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
-    <jacoco-maven-plugin.version>0.8.10</jacoco-maven-plugin.version>
+    <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
     <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-install-plugin -->
@@ -44,7 +45,7 @@
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
     <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
-    <maven-javadoc-plugin.version>3.5.0</maven-javadoc-plugin.version>
+    <maven-javadoc-plugin.version>3.6.2</maven-javadoc-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
     <maven-gpg-plugin.version>3.1.0</maven-gpg-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin -->
@@ -59,8 +60,8 @@
   </licenses>
 
   <organization>
-    <name>404z.cn</name>
-    <url>http://404z.cn</url>
+    <name>404z</name>
+    <url>https://www.404z.cn</url>
   </organization>
 
   <developers>
@@ -78,8 +79,8 @@
 
   <!-- 测试(生成覆盖率报告) mvn clean test -P jacoco -->
   <!-- 发送到sonar服务器 mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=组织 -Dsonar.projectKey=项目 -Dsonar.login=密钥 -->
-  <!-- 打包(不执行测试用例) mvn clean install -DskipTests=true-->
-  <!-- 部署到maven仓库(跳过测试) mvn clean deploy -P nexus -Dmaven.test.skip=true-->
+  <!-- 打包(不执行测试用例) mvn clean install -DskipTests=true -->
+  <!-- 部署到maven仓库(跳过测试) mvn clean deploy -P nexus -Dmaven.test.skip=true -->
   <profiles>
     <profile>
       <id>jacoco</id>

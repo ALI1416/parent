@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>cn.404z</groupId>
@@ -27,29 +27,29 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-clean-plugin -->
-    <maven-clean-plugin.version>3.3.2</maven-clean-plugin.version>
+    <maven-clean-plugin.version>3.4.0</maven-clean-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
     <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-    <maven-compiler-plugin.version>3.12.0</maven-compiler-plugin.version>
+    <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-    <maven-surefire-plugin.version>3.2.3</maven-surefire-plugin.version>
+    <maven-surefire-plugin.version>3.3.1</maven-surefire-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
-    <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
+    <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
-    <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
+    <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-install-plugin -->
-    <maven-install-plugin.version>3.1.1</maven-install-plugin.version>
+    <maven-install-plugin.version>3.1.2</maven-install-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
-    <maven-deploy-plugin.version>3.1.1</maven-deploy-plugin.version>
+    <maven-deploy-plugin.version>3.1.2</maven-deploy-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
-    <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
+    <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
-    <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
+    <maven-javadoc-plugin.version>3.7.0</maven-javadoc-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
-    <maven-gpg-plugin.version>3.1.0</maven-gpg-plugin.version>
+    <maven-gpg-plugin.version>3.2.4</maven-gpg-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin -->
-    <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
+    <nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
   </properties>
 
   <licenses>

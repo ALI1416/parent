@@ -7,7 +7,7 @@
   <groupId>cn.404z</groupId>
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
-  <version>1.5.0</version>
+  <version>1.6.0</version>
 
   <name>parent</name>
   <description>Maven Project Parent Pattern Maven项目父模板</description>
@@ -48,8 +48,8 @@
     <maven-javadoc-plugin.version>3.12.0</maven-javadoc-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
     <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
-    <!-- https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin -->
-    <nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
+    <!-- https://mvnrepository.com/artifact/org.sonatype.central/central-publishing-maven-plugin -->
+    <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
   </properties>
 
   <licenses>
@@ -79,8 +79,8 @@
 
   <!-- 测试(生成覆盖率报告) mvn clean test -P jacoco -->
   <!-- 发送到sonar服务器 mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=组织 -Dsonar.projectKey=项目 -Dsonar.login=密钥 -->
-  <!-- 打包(不执行测试用例) mvn clean install -DskipTests=true -->
-  <!-- 部署到maven仓库(跳过测试) mvn clean deploy -P nexus -Dmaven.test.skip=true -->
+  <!-- 打包(跳过测试) mvn clean install -DskipTests=true -->
+  <!-- 部署到maven仓库(跳过测试) mvn clean deploy -P central -Dmaven.test.skip=true -->
   <profiles>
     <profile>
       <id>jacoco</id>
@@ -114,7 +114,7 @@
       </build>
     </profile>
     <profile>
-      <id>nexus</id>
+      <id>central</id>
       <build>
         <plugins>
           <plugin>
@@ -170,13 +170,12 @@
             </executions>
           </plugin>
           <plugin>
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
             <extensions>true</extensions>
             <configuration>
-              <serverId>ossrh</serverId>
-              <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-              <autoReleaseAfterClose>true</autoReleaseAfterClose>
+              <publishingServerId>central</publishingServerId>
+              <autoPublish>true</autoPublish>
             </configuration>
           </plugin>
         </plugins>
@@ -246,24 +245,11 @@
         <version>${maven-gpg-plugin.version}</version>
       </plugin>
       <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>${nexus-staging-maven-plugin.version}</version>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <version>${central-publishing-maven-plugin.version}</version>
       </plugin>
     </plugins>
   </build>
-
-  <distributionManagement>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <name>Sonatype Nexus Snapshots</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-    </snapshotRepository>
-    <repository>
-      <id>ossrh</id>
-      <name>Nexus Release Repository</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-  </distributionManagement>
 
 </project>

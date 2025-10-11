@@ -7,7 +7,7 @@
   <groupId>cn.404z</groupId>
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
-  <version>1.6.0</version>
+  <version>1.6.1</version>
 
   <name>parent</name>
   <description>Maven Project Parent Pattern Maven项目父模板</description>
@@ -77,9 +77,9 @@
     </developer>
   </developers>
 
-  <!-- 测试(生成覆盖率报告) mvn clean test -P jacoco -->
-  <!-- 发送到sonar服务器 mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=组织 -Dsonar.projectKey=项目 -Dsonar.login=密钥 -->
-  <!-- 打包(跳过测试) mvn clean install -DskipTests=true -->
+  <!-- 测试并生成报告 mvn clean test -P jacoco -->
+  <!-- 发送测试报告到sonar服务器 mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=组织 -Dsonar.projectKey=项目 -Dsonar.login=密钥 -->
+  <!-- 打包(跳过测试) mvn clean install -Dmaven.test.skip=true -->
   <!-- 部署到maven仓库(跳过测试) mvn clean deploy -P central -Dmaven.test.skip=true -->
   <profiles>
     <profile>

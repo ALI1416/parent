@@ -7,7 +7,7 @@
   <groupId>cn.404z</groupId>
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
-  <version>1.6.1</version>
+  <version>1.7.0</version>
 
   <name>parent</name>
   <description>Maven Project Parent Pattern Maven项目父模板</description>
@@ -35,7 +35,7 @@
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
     <maven-surefire-plugin.version>3.5.4</maven-surefire-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
-    <jacoco-maven-plugin.version>0.8.13</jacoco-maven-plugin.version>
+    <jacoco-maven-plugin.version>0.8.14</jacoco-maven-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
     <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-install-plugin -->
@@ -78,7 +78,7 @@
   </developers>
 
   <!-- 测试并生成报告 mvn clean test -P jacoco -->
-  <!-- 发送测试报告到sonar服务器 mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=组织 -Dsonar.projectKey=项目 -Dsonar.login=密钥 -->
+  <!-- 发送测试报告到sonar服务器 mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.organization=组织 -Dsonar.projectKey=项目 -Dsonar.token=密钥 -->
   <!-- 打包(跳过测试) mvn clean install -Dmaven.test.skip=true -->
   <!-- 部署到maven仓库(跳过测试) mvn clean deploy -P central -Dmaven.test.skip=true -->
   <profiles>
